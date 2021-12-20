@@ -1,0 +1,19 @@
+{
+  "exclude": ["**/*.spec.ts", "node_modules"],
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "ES2019",
+    "module": "commonJS",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true
+  },
+  "types": ["jest", "node"]
+}

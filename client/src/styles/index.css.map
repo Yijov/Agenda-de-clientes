@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,GAAG;CACX;;ACFD,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,KAAK;CACb;;AEFD,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "index.scss",
+        "../components/_index.scss",
+        "../components/footer/_footer.scss",
+        "../pages/_index.scss",
+        "_appLayout.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}

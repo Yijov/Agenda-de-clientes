@@ -1,0 +1,21 @@
+post http://localhost:8081/api/v1/account/signup 
+content-Type: application/json
+
+{
+ "name":"yirbett", "lastName":"Joseph","email":"yirbett@gmail.com", "password":"Nossss1!", "confirmPassword":"Nossss1!"
+}
+
+###
+
+post http://localhost:8081/api/v1/account/signin 
+content-Type: application/json
+
+{
+"email":"yirbett@gmail.com", "password":"3333333"
+}
+
+###
+
+get http://localhost:8081/api/v1/account/signout 
+content-Type: application/json
+
