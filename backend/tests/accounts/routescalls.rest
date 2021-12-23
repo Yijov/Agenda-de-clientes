@@ -1,0 +1,39 @@
+//with the server runing press the <Send Reqest> button to see the api calls for each route 
+
+post http://localhost:8081/api/v1/account/signup 
+content-Type: application/json
+
+{
+ "name":"yirbett", 
+ "lastName":"Joseph",
+ "email":"yirbett@gmail.com", 
+ "password":"Nossss1!", 
+ "confirmPassword":"Nossss1!"
+}
+
+###
+
+post http://localhost:8081/api/v1/account/signin 
+content-Type: application/json
+
+{
+"email":"yirbett@gmail.com", 
+"password":"Nossss1!"
+}
+
+
+###
+post http://localhost:8081/api/v1/account/pw/reset
+content-Type: application/json
+
+{
+"currentPassword":"Nossss1!",  
+"newPassword":"Nossss2!", 
+"newPasswordConfirm":"Nossss2!"
+}
+
+###
+
+get http://localhost:8081/api/v1/account/signout 
+content-Type: application/json
+

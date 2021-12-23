@@ -1,6 +1,6 @@
 {
   "exclude": ["**/*.spec.ts", "node_modules"],
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "_tests_/accounts/validator.spec.ts"],
   "compilerOptions": {
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,

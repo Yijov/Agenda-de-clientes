@@ -1,11 +1,14 @@
 import { Router } from "express";
-import AcountRoutes from "../account/_routes_/AccountRouter";
+import AccountsRouter from "../accounts/_routes_/AccountRouter";
+import CustomersRouter from "../customers/_routes_/customersRouter";
+import SecurityTools from "../../utils/security/SecurityTools";
 
 const V1router: Router = Router();
-//authentication  api/v1/auth
-V1router.use("/account", AcountRoutes);
+//authentication  api/v1/accounts
+V1router.use("/account", AccountsRouter);
 
-//routine management  api/v1/routine
-V1router.use("/routine", AcountRoutes);
+//customers  api/v1/customers
+//only auth users
+V1router.use("/customers", SecurityTools.AUTH, CustomersRouter);
 
 export default V1router;

@@ -3,7 +3,9 @@ import env from "dotenv";
 env.config();
 import JWT from "jsonwebtoken";
 import BCrypt from "bcrypt";
-import { Response } from "express";
+import { NextFunction, Response, Request } from "express";
+import IJWTPayload from "./IJWTPayload";
+
 export default class SecurityTools {
   private JWTmaxAge = 1 * 24 * 60 * 60; //24 hours
 
@@ -20,19 +22,35 @@ export default class SecurityTools {
     SubmitedPassword: string,
     encriptedPassword: string
   ): Promise<boolean> => {
-    return await BCrypt.compare(SubmitedPassword, encriptedPassword);
+    const Valid = await BCrypt.compare(SubmitedPassword, encriptedPassword);
+    return Valid;
   };
 
-  public CreateToken = async (Id: string): Promise<string> => {
-    let token = JWT.sign({ id: Id }, process.env.TOKEN_SECRET!!, {
+  public CreateToken = async (payload: IJWTPayload): Promise<string> => {
+    let token = JWT.sign(payload, process.env.TOKEN_SECRET!!, {
       expiresIn: this.JWTmaxAge,
     });
     return token;
   };
 
-  public validateToken = async (token: string): Promise<boolean> => {
-    const verifiedToken = await JWT.verify(token, process.env.TOKEN_SECRET!!);
-    return verifiedToken ? true : false;
+  public static AUTH = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const token = req.cookies.AuthToken;
+      const verifyed = await JWT.verify(token, process.env.TOKEN_SECRET!!);
+      if (token && verifyed) {
+        next();
+      } else {
+        return res.status(401).json({ message: "You are not logged in" });
+      }
+      //will throw error if it fails
+    } catch (error) {
+      return res.status(400).json({ message: "Invalid token" });
+    }
+  };
+
+  public ExtractInfoFromToken = async (token: string) => {
+    const tokenData = await JWT.verify(token, process.env.TOKEN_SECRET!!);
+    return <IJWTPayload>tokenData;
   };
 
   public addCredentials = async (res: Response, token: string) => {

@@ -6,7 +6,7 @@ import morgan from "morgan";
 import cors from "cors";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
-import ErrorHandler from "../error_handler/ErrorHandler";
+import ErrorHandler from "../errors/ErrorHandler";
 
 export default class AppConfig {
   protected app: Express = express();

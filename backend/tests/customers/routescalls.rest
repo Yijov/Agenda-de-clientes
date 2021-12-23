@@ -1,0 +1,64 @@
+//[GET] /api/v1/customers
+GET http://localhost:8081/api/v1/customers 
+content-Type: application/json 
+Cookie: AuthToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYzMyZjUxNzZiMmE2NThhMzQ3NDU4ZiIsImlhdCI6MTY0MDE4MTcxNywiZXhwIjoxNjQwMjY4MTE3fQ.vMMH7V798Za3Jx0scbpUByvj6ixO43kFgFqDNuGo_xI; Max-Age=86400; Path=/; Expires=Thu, 23 Dec 2021 14:01:57 GMT; HttpOnly,LogToken=true; Max-Age=86400; Path=/; Expires=Thu, 23 Dec 2021 14:01:57 GMT
+
+
+
+### 
+//[POST] /api/v1/customers
+POST http://localhost:8081/api/v1/customers 
+content-Type: application/json 
+Cookie: AuthToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYzMyZjUxNzZiMmE2NThhMzQ3NDU4ZiIsImlhdCI6MTY0MDE4MTcxNywiZXhwIjoxNjQwMjY4MTE3fQ.vMMH7V798Za3Jx0scbpUByvj6ixO43kFgFqDNuGo_xI; Max-Age=86400; Path=/; Expires=Thu, 23 Dec 2021 14:01:57 GMT; HttpOnly,LogToken=true; Max-Age=86400; Path=/; Expires=Thu, 23 Dec 2021 14:01:57 GMT
+
+{
+"__type":"business", 
+"name": "Grupo Ramos", 
+"phone":"8095673021", 
+"email": "fenrrier1@gmail.com"
+}
+
+### 
+//[PUT] /api/v1/customers/:id
+PUT http://localhost:8081/api/v1/customers/61c389afd41b8676d0c8feda 
+content-Type: application/json 
+Cookie: AuthToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYzMyZjUxNzZiMmE2NThhMzQ3NDU4ZiIsImlhdCI6MTY0MDE4MTcxNywiZXhwIjoxNjQwMjY4MTE3fQ.vMMH7V798Za3Jx0scbpUByvj6ixO43kFgFqDNuGo_xI; Max-Age=86400; Path=/; Expires=Thu, 23 Dec 2021 14:01:57 GMT; HttpOnly,LogToken=true; Max-Age=86400; Path=/; Expires=Thu, 23 Dec 2021 14:01:57 GMT
+
+{
+"__type":"Person", 
+  "_id": "61c38a81b875c6c88819e0d5",
+  "userAccountId": "61c32f5176b2a658a347458f",
+  "changes": {
+    "lastName": "Herrera"
+  }
+}
+
+###
+//[POST] /api/v1/customers/interactions/:CID
+
+POST http://localhost:8081/api/v1/customers/interactions/61c38a81b875c6c88819e0d5 
+content-Type: application/json 
+Cookie: AuthToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYzMyZjUxNzZiMmE2NThhMzQ3NDU4ZiIsImlhdCI6MTY0MDE4MTcxNywiZXhwIjoxNjQwMjY4MTE3fQ.vMMH7V798Za3Jx0scbpUByvj6ixO43kFgFqDNuGo_xI; Max-Age=86400; Path=/; Expires=Thu, 23 Dec 2021 14:01:57 GMT; HttpOnly,LogToken=true; Max-Age=86400; Path=/; Expires=Thu, 23 Dec 2021 14:01:57 GMT
+
+{
+"notes":"test Notes",
+"type":"info"
+}
+
+### 
+//[DELETE] /api/v1/customers/:id
+DELETE http://localhost:8081/api/v1/customers/61c3342d92651abf4503753c 
+content-Type: application/json 
+Cookie: AuthToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYzMyZjUxNzZiMmE2NThhMzQ3NDU4ZiIsImlhdCI6MTY0MDE4MTcxNywiZXhwIjoxNjQwMjY4MTE3fQ.vMMH7V798Za3Jx0scbpUByvj6ixO43kFgFqDNuGo_xI; Max-Age=86400; Path=/; Expires=Thu, 23 Dec 2021 14:01:57 GMT; HttpOnly,LogToken=true; Max-Age=86400; Path=/; Expires=Thu, 23 Dec 2021 14:01:57 GMT
+
+
+###
+//[DELETE] /api/v1/customers/interactions/:CID
+
+DELETE http://localhost:8081/api/v1/customers/interactions/61c38a81b875c6c88819e0d5 
+content-Type: application/json 
+Cookie: AuthToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYzMyZjUxNzZiMmE2NThhMzQ3NDU4ZiIsImlhdCI6MTY0MDE4MTcxNywiZXhwIjoxNjQwMjY4MTE3fQ.vMMH7V798Za3Jx0scbpUByvj6ixO43kFgFqDNuGo_xI; Max-Age=86400; Path=/; Expires=Thu, 23 Dec 2021 14:01:57 GMT; HttpOnly,LogToken=true; Max-Age=86400; Path=/; Expires=Thu, 23 Dec 2021 14:01:57 GMT
+
+{
+    "interactionID":"61c3a19d02c1d18e343ddfa8"
+}
