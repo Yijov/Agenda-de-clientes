@@ -38,10 +38,10 @@ export default class CustomerComtroller {
   ) => {
     //add owner account ID to the document body
     const accountInfo = await this.auth.ExtractInfoFromToken(req.cookies.AuthToken);
-    const customerTuAdd = { ...req.body, userAccountId: accountInfo.id };
+    const customerToAdd = { ...req.body, userAccountId: accountInfo.id };
     try {
-      this.validator.validateCustomerCreate(customerTuAdd);
-      const customer = await this.service.AddOne(customerTuAdd);
+      this.validator.validateCustomerCreate(customerToAdd);
+      const customer = await this.service.AddOne(customerToAdd);
       this.response.Success(res, customer);
     } catch (error) {
       next(error);

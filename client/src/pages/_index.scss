@@ -1,3 +1,9 @@
-h3 {
-  color: green;
-}
+@import "./appointments/appointments";
+@import "./customer_create/customer_create";
+@import "./customer_profile/customer_profile";
+@import "./customers/customers";
+@import "./history/history";
+@import "./home/home";
+@import "./signin/signin";
+@import "./signup/signup";
+@import "./stats/stats";

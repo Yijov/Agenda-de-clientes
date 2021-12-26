@@ -1,1 +1,13 @@
-export { default as Footer } from "./footer/Footer";
+export { default as StatsCad } from "./cards/stats_card/StatsCads";
+export { default as StatsMiniCard } from "./cards/stats_mini_card/StatsMiniCard";
+export { default as ContactInfoPannel } from "./customer_contact_info_pannel/ContactInfoPannel";
+export { default as InteractionComponen } from "./lists/interactions_list/InteractionComponen";
+export { default as InteractionsAddForm } from "./lists/interactions_list/InteractionsAddForm";
+export { default as InteractionList } from "./lists/interactions_list/InteractionList";
+export { default as Navigation } from "./navigation/Navigation";
+export { default as ProgressBarr } from "./progress_bar/ProgressBarr";
+export { default as PrivateRoute } from "./routes/private_route/PrivateRoute";
+export { default as PublicRoute } from "./routes/public_route/PublicRoute";
+export { default as SearchBar } from "./search_bar/SearchBar";
+export { default as PageHeader } from "./section_header/PageHeader";
+export { default as PageSubHeader } from "./section_sub_header/PageSubHeader";

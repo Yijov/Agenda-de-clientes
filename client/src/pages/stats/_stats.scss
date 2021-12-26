@@ -1,0 +1,83 @@
+#stats-page {
+  #stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    max-height: 80vh;
+    overflow: auto;
+    background-color: whitesmoke;
+
+    .stats-card {
+      width: 95%;
+      height: 9rem;
+      margin-top: 0.8rem;
+      border-radius: 6px;
+      background-color: $whiteBackGround;
+      box-shadow: $BoxShadow;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 400;
+      .progressbar {
+        div {
+          background-color: $ProgressBarFill;
+        }
+      }
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        font-weight: 500;
+        padding-top: 5px;
+        padding-bottom: 8px;
+        background-color: $PrimaryColor;
+        color: $WhiteText;
+        border-bottom: 2px solid black;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      span {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+
+    #ministats-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      .stats-minicard {
+        width: 7.5rem;
+        height: 9rem;
+        margin-top: 0.3rem;
+        border-radius: 6px;
+        background-color: $whiteBackGround;
+        box-shadow: $BoxShadow;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 400;
+
+        h2 {
+          margin-top: 0;
+          margin-bottom: 1rem;
+          width: 100%;
+          font-weight: 400;
+          padding-top: 5px;
+          padding-bottom: 8px;
+          background-color: $PrimaryColor;
+          color: $WhiteText;
+          border-bottom: 2px solid black;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+        span {
+          font-size: 2.5rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

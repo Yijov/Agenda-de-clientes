@@ -1,4 +1,8 @@
-@import "../components/index";
+@import "./resets";
+@import "./variables";
+@import "./body";
+@import "./app";
+@import "./page";
+@import "./hader";
+@import "./navigation";
 @import "../pages/index";
-@import "appLayout";
-@import "variables";

@@ -1,0 +1,53 @@
+.history-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .search-bar-container {
+    width: 100vw;
+    height: 3.5rem;
+    background-color: $SecundaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .icon {
+      color: #fff;
+      font-size: 1.5rem;
+      margin-right: 0.2rem;
+      text-shadow: $BoxShadow;
+    }
+    .search-bar {
+      font-size: 0.8rem;
+      width: 15rem;
+      border-radius: 16px;
+      padding: 6px;
+      padding-left: 12px;
+      outline: none;
+      box-shadow: $BoxShadow;
+    }
+  }
+
+  .customer-list {
+    width: 100vw;
+    min-height: 60vh;
+    max-height: 75vh;
+    margin-top: 0.4rem;
+    overflow: auto;
+    background-color: $SoftColor;
+    .customer {
+      height: 1.8rem;
+      padding: 0.6rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      background-color: #fff;
+      color: black;
+      box-shadow: $BoxShadow;
+    }
+  }
+}

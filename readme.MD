@@ -21,3 +21,22 @@ keep in mind you need typescript installed
 ![Customers page](./client/docs/design/Captura6.PNG "Customers Page")
 ![Customers page](./client/docs/design/Captura8.PNG "Customers Page")
 ![Customers page](./client/docs/design/Captura9.PNG "Customers Page")
+
+## To be developed:
+
+### frontend
+
+    [] Responsiveness for desktop view
+    [] PWA Functionality
+    [] Resset Password Functionality
+    [] Hability to submit contact person for business customers
+    [] Appointments page
+    [] Emails page
+    [] Own and owed stats
+    [] Sales stats
+    [] update customers profile
+
+### Backend
+
+    [] Appointments Module
+    [] Mailing module

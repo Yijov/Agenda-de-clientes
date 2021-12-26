@@ -1,18 +1,14 @@
-h2 {
-  color: pink;
-}
+$PrimaryColor: #ff0000;
+$SecundaryColor: #ff6666;
+$MidTone: #ff8080;
+$SoftColor: #ffe6e6;
+$BoxShadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+$WhiteText: #fff;
+$whiteBackGround: #fff;
+$ProgressBarFill: #00cc00;
 
-//Colors
-$colorMain: red;
-$colorSecundary: red;
-$colorSuccess: red;
-$colorInfo: red;
-$colorDanger: red;
-$colorWarning: red;
-$colorDesabled: red;
-$colorDarkBackground: red;
-$colorLightBackground: red;
-$colorLightText: red;
-$colorDarkText: red;
-$colorHiglightText: red;
-$colorDesabledText: red;
+//log in form
+$shadow-color: #23203b;
+$input-color: lighten(#ab9e95, 10%);
+$input-border-color: #5e5165;
+$button-background-color: #27ae60;

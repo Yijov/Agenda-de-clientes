@@ -1,0 +1,181 @@
+.customer-profile-page {
+  height: 100%;
+  background-color: $SoftColor;
+  position: relative;
+  .showcase {
+    position: relative;
+    font-size: 2rem;
+    padding: 0.5rem;
+    height: 30%;
+    background-color: $PrimaryColor;
+    color: $WhiteText;
+    background-image: url("../assets/images/CRM.png");
+    background-size: cover;
+    sub {
+      font-size: 1.2rem;
+    }
+
+    .action-icons {
+      width: 4rem;
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      right: 1rem;
+      font-size: 1.5rem;
+      .icon {
+        cursor: pointer;
+      }
+    }
+    .customerName {
+      position: absolute;
+      bottom: 1rem;
+    }
+  }
+
+  .contact-info {
+    margin-top: 0.5rem;
+    height: 20%;
+    box-shadow: $BoxShadow;
+    background-color: white;
+    margin-bottom: 0.5rem;
+    ol {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+    }
+    ol li {
+      width: 100%;
+      font-size: 1.2rem;
+      margin-top: 6px;
+      margin-left: 25%;
+      list-style: none;
+      color: $PrimaryColor;
+      .icon {
+        margin-right: 10px;
+      }
+    }
+  }
+  .interactions-list {
+    position: relative;
+    margin-top: 0.5rem;
+    height: 37%;
+    max-height: 20rem;
+    overflow: auto;
+    box-shadow: $BoxShadow;
+    background-color: $SoftColor;
+    .interaction {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px;
+      margin-bottom: 2px;
+      box-shadow: $BoxShadow;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .no-interactions-message {
+      width: 100%;
+      margin-top: 4rem;
+      text-align: center;
+      color: $MidTone;
+      font-size: 1.5rem;
+    }
+  }
+  .interaction-Add-form {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 2rem;
+    width: 95%;
+    height: 16rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: $BoxShadow;
+    max-width: 20rem;
+
+    form {
+      height: 70%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .radios {
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      #notes {
+        display: block;
+        width: 90%;
+        height: 65%;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      #save-button {
+        width: 95%;
+        height: 2rem;
+        font-weight: 500;
+        border-radius: 6px;
+        background-color: green;
+        color: $WhiteText;
+        box-shadow: $BoxShadow;
+      }
+    }
+    button {
+      margin-top: 0.2rem;
+      background-color: $SecundaryColor;
+      color: $WhiteText;
+      height: 2rem;
+      border-radius: 6px;
+      box-shadow: $BoxShadow;
+      width: 95%;
+    }
+  }
+
+  .notes-display {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 2rem;
+    width: 95%;
+    height: 15rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: $BoxShadow;
+    max-width: 20rem;
+
+    .notes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      height: 65%;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    button {
+      margin-top: 0.2rem;
+      background-color: $SecundaryColor;
+      color: $WhiteText;
+      height: 2rem;
+      border-radius: 6px;
+      box-shadow: $BoxShadow;
+      width: 95%;
+    }
+  }
+}

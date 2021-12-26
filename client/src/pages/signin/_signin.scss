@@ -1,0 +1,88 @@
+#login-page {
+  #login-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 26rem;
+    background-color: white;
+    box-shadow: $BoxShadow;
+    margin: auto;
+
+    h2 {
+      font-size: 2rem;
+      color: $PrimaryColor;
+      margin: 1rem;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    input {
+      margin: 0.8rem;
+      margin-top: 1rem;
+      padding: 1rem;
+    }
+
+    #login-email,
+    #login-password {
+      border-bottom: 1px solid $PrimaryColor;
+      outline: none;
+    }
+
+    #login-error {
+      height: 3rem;
+      width: 85%;
+      text-align: center;
+      color: red;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1.5rem;
+      font-weight: 500;
+    }
+
+    #reset-pasword_link,
+    #create-account_link {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1.5rem;
+      font-weight: 500;
+    }
+
+    #login-form-submit {
+      background-color: $PrimaryColor;
+      box-shadow: $BoxShadow;
+      color: $WhiteText;
+      font-size: 1.5rem;
+      border-radius: 6px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    #login-form {
+      height: 32rem;
+      max-width: 20rem;
+      h2 {
+        font-size: 2rem;
+        margin: 1rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+      }
+
+      #reset-pasword_link,
+      #create-account_link {
+        margin-top: 1rem;
+        font-weight: 400;
+      }
+
+      #login-form-submit {
+        font-size: 1rem;
+        padding: 4px;
+      }
+    }
+  }
+}

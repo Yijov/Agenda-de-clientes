@@ -1,0 +1,76 @@
+#register-page {
+  #register-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 812px;
+    width: 100%;
+    max-width: 26rem;
+    background-color: white;
+    box-shadow: $BoxShadow;
+    margin: auto;
+
+    h2 {
+      font-size: 2rem;
+      color: $PrimaryColor;
+      margin: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 0;
+    }
+
+    input {
+      margin: 0.8rem;
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+    }
+
+    #register-email,
+    #register-password,
+    #register-name,
+    #register-lastName,
+    #register-password-confirm {
+      border-bottom: 1px solid $PrimaryColor;
+      outline: none;
+    }
+
+    #register-error {
+      text-align: center;
+      height: 3rem;
+      width: 85%;
+      color: red;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1.5rem;
+      font-weight: 500;
+    }
+    #has-account_link {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+
+    #register-form-submit {
+      background-color: $PrimaryColor;
+      box-shadow: $BoxShadow;
+      color: $WhiteText;
+      margin-top: 1rem;
+      font-size: 1rem;
+      border-radius: 6px;
+    }
+  }
+}
+
+//desktop
+
+@media only screen and (min-width: 768px) {
+  #register-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    #register-form {
+      height: 95%;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+export { default as Home } from "./home/Home";
+export { default as Customers } from "./customers/Customers";
+export { default as History } from "./history/History";
+export { default as Appointments } from "./appointments/Appointments";
+export { default as Signin } from "./signin/Signin";
+export { default as Signup } from "./signup/Signup";
+export { default as Profile } from "./customer_profile/CustomerProfile";
+export { default as Create } from "./customer_create/CustomerCreate";
+export { default as Stats } from "./stats/Stats";

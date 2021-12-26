@@ -1,0 +1,69 @@
+#add-update-customer-page {
+  #add-update-customer-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 87vh;
+    overflow: auto;
+    max-width: 25rem;
+    background-color: white;
+    box-shadow: $BoxShadow;
+    margin: auto;
+
+    h2 {
+      font-size: 2rem;
+      color: $PrimaryColor;
+      margin: 1.2rem;
+      margin-top: 3rem;
+      margin-bottom: 0;
+    }
+
+    input {
+      margin: 0.8rem;
+      margin-top: 0.5rem;
+      padding: 1rem;
+    }
+
+    #add-update-customer-email,
+    #add-update-customer-password,
+    #add-update-customer-name,
+    #add-update-customer-lastName,
+    #add-update-customer-phone,
+    #add-update-customer-type,
+    #add-update-customer-category,
+    #add-update-customer-contactPerson,
+    #add-update-customer-province {
+      margin: 1.2rem;
+      width: 18rem;
+      border-bottom: 1px solid $PrimaryColor;
+      outline: none;
+    }
+    #add-update-customer-type,
+    #add-update-customer-category {
+      width: 20rem;
+    }
+
+    #add-update-customer-error {
+      text-align: center;
+      height: 1rem;
+      width: 85%;
+      color: red;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1.5rem;
+      font-weight: 500;
+    }
+
+    #add-update-customer-form-submit {
+      margin: auto;
+      width: 85%;
+      background-color: green;
+      box-shadow: $BoxShadow;
+      color: $WhiteText;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      border-radius: 16px;
+    }
+  }
+}
