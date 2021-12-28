@@ -2,8 +2,6 @@ import React from "react";
 import IProgressBarProps from "./IProgressBarProps";
 
 const ProgressBar: React.FC<IProgressBarProps> = ({ progress }) => {
-  console.log(progress);
-
   return (
     <div
       className="progressbar"
