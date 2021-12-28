@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ICustomer from "../../../interfaces/ICustomer";
+import ICustomer from "../../../models/ICustomer";
 
 export default function useFilter(CUSTOMERS: ICustomer[]) {
   const [FilteredCustomers, setFilteredCustomers] = useState<ICustomer[]>(CUSTOMERS);

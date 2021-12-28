@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import ICustomer from "../../interfaces/ICustomer";
-import ICustomerInteraction from "../../interfaces/ICustomerInteraction";
+import ICustomer from "../../models/ICustomer";
+import ICustomerInteraction from "../../models/ICustomerInteraction";
 import { State } from "../../state/State";
 import FilterByDates from "../../utils/FilterByDates";
 import InteractionType from "../../enums/InteractionType";

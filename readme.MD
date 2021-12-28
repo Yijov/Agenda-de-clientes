@@ -27,6 +27,7 @@ keep in mind you need typescript installed
 ### frontend
 
     [] Responsiveness for desktop view
+    [] Add a custom fivicon
     [] PWA Functionality
     [] Resset Password Functionality
     [] Hability to submit contact person for business customers

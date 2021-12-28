@@ -1,7 +1,7 @@
 import Connection from "../connection/Connection";
-import IUpdateCustomerDTO from "../../interfaces/IUpdateCustomerDTO";
-import ICustomer from "../../interfaces/ICustomer";
-import ICustomerInteraction from "../../interfaces/ICustomerInteraction";
+import IUpdateCustomerDTO from "../../models/IUpdateCustomerDTO";
+import ICustomer from "../../models/ICustomer";
+import ICustomerInteraction from "../../models/ICustomerInteraction";
 
 export default class CustomersAPI extends Connection {
   private routes = {

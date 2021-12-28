@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ICustomer from "../../interfaces/ICustomer";
+import ICustomer from "../../models/ICustomer";
 import { State } from "../../state/State";
 import PageHeader from "../../components/section_header/PageHeader";
 import SearchBar from "../../components/search_bar/SearchBar";

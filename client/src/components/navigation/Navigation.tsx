@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { BsPerson, BsPlusCircle, BsBarChart, BsClockHistory, BsListCheck } from "react-icons/bs";
 import { State } from "../../state/State";
-import AppRoutes from "../../enums/routes";
+import AppRoutes from "../../enums/AppRoutes";
 const Navigation: React.FC = () => {
   const { AUTH_CONTEXT, CUSTOMER_PROFILE_CONTEXT } = useContext(State);
 

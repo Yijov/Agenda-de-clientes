@@ -1,13 +1,13 @@
 import React from "react";
 
-import "./styles/index.css";
+import "../styles/index.css";
 import { Routes, Route } from "react-router-dom";
-import { StateProvider } from "./state/State";
+import { StateProvider } from "../state/State";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 //partial components
-import { Navigation, PrivateRoute, PublicRoute } from "./components";
+import { Navigation, PrivateRoute, PublicRoute } from "../components";
 
 //pages
 import {
@@ -20,16 +20,14 @@ import {
   Signup,
   Profile,
   Create,
-} from "./pages";
+} from "../pages";
 
 function App() {
   return (
     <div className="App">
       <StateProvider>
         <Routes>
-          <Route path="/" element={<PublicRoute />}>
-            <Route path="/" element={<Home />} />
-          </Route>
+          <Route path="/" element={<Home />} />
           <Route path="/signin" element={<PublicRoute />}>
             <Route path="/signin" element={<Signin />} />
           </Route>

@@ -81,6 +81,11 @@ export default class AccountService implements IAccountService {
         credentials.password,
         accountExists.password
       );
+      console.log(credentials.password);
+      console.log(accountExists.password);
+
+      console.log(authenticatedAccount);
+
       if (authenticatedAccount) {
         //add authentication cookeis to the response
         const token = await this.authTools.CreateToken({

@@ -3,6 +3,7 @@ import { State } from "../../../state/State";
 import { useNavigate } from "react-router-dom";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import ICustomerProps from "./ICustomerProps";
+import AppRoutes from "../../../enums/AppRoutes";
 
 const CustomerComponent: React.FC<ICustomerProps> = ({ customer }) => {
   const location = useNavigate();
@@ -10,7 +11,7 @@ const CustomerComponent: React.FC<ICustomerProps> = ({ customer }) => {
 
   const apenProfile = async () => {
     await CUSTOMER_PROFILE_CONTEXT.API.SET_CURRENT_PROFILE(customer);
-    location("/profile");
+    location(AppRoutes.PROFILE);
   };
 
   return (

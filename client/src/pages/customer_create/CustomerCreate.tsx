@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { State } from "../../state/State";
 import { useNavigate } from "react-router";
 import customerTypes from "../../enums/customerTipes";
+import AppRoutes from "../../enums/AppRoutes";
 
 //components
 import {
@@ -32,7 +33,7 @@ const CustomerCreate: React.FC = () => {
       await SET_CURRENT_PROFILE(customerAdded);
       await UPDATE_CURRENT_PROFILE();
       ADD_CUSTOMER_FORM_CONTEXT.API.RESET_FORM();
-      setTimeout(() => Navigate("/profile"), 2000);
+      setTimeout(() => Navigate(AppRoutes.PROFILE), 1000);
     }
   };
 

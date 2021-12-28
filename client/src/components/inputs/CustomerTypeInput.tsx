@@ -4,7 +4,7 @@ import customerTypes from "../../enums/customerTipes";
 
 const CustomerTypeInput: React.FC<IInputProps> = ({ onchage, value }) => {
   return (
-    <select id="add-update-customer-type" name="type" onChange={onchage} value={value} required>
+    <select id="add-update-customer-type" name="__type" onChange={onchage} value={value} required>
       <option value="" disabled defaultValue={customerTypes.Person}>
         Customer Type
       </option>

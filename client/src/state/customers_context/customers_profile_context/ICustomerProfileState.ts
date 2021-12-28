@@ -1,5 +1,5 @@
-import ICustomer from "../../../interfaces/ICustomer";
-import ICustomerInteraction from "../../../interfaces/ICustomerInteraction";
+import ICustomer from "../../../models/ICustomer";
+import ICustomerInteraction from "../../../models/ICustomerInteraction";
 export default interface ICustomerProfileContext {
   API: {
     SET_CURRENT_PROFILE: (customer: ICustomer) => void;

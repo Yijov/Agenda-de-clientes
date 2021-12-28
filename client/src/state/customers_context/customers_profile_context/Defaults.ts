@@ -1,10 +1,10 @@
 import { ChangeEvent } from "react";
-import ICustomer from "../../../interfaces/ICustomer";
+import ICustomer from "../../../models/ICustomer";
 import ICustomerProfileContext from "./ICustomerProfileState";
 import InteractionType from "../../../enums/InteractionType";
 import customerTypes from "../../../enums/customerTipes";
 import customerCategories from "../../../enums/customerCategories";
-import ICustomerInteraction from "../../../interfaces/ICustomerInteraction";
+import ICustomerInteraction from "../../../models/ICustomerInteraction";
 
 const ProfileDefaults: ICustomerProfileContext = {
   API: {

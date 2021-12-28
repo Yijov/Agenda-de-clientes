@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import AuthAPI from "../../data/apis/AuthAPI";
-import IAccountSignUpDTO from "../../interfaces/IAccountSignUpDTO";
+import IAccountSignUpDTO from "../../models/IAccountSignUpDTO";
 import Cookies from "universal-cookie";
 import AuthDefaults from "./AuthDefaults";
 
@@ -40,7 +40,7 @@ export default function AuthState() {
 
   const SIGNIN_SUBMIT = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const response = await Api.POST_SIGNIN(AuthData);
+    const response = await Api.POST_SIGNIN({ email: AuthData.email, password: AuthData.password });
     if (response?.success === true) {
       return setAuth(true);
     } else {
@@ -54,7 +54,7 @@ export default function AuthState() {
   const SIGNUP_SUBMIT = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (AuthData.password !== AuthData.confirmPassword) {
-      setAuthError("The pasword does not mathc the pasword confirmed");
+      setAuthError("The pasword and confirmed password does not match");
       return setAuth(false);
     }
     const response = await Api.POST_SIGNUP(AuthData);

@@ -2,6 +2,7 @@
 import React, { useContext, useEffect } from "react";
 import { State } from "../../state/State";
 import { useNavigate } from "react-router";
+import AppRoutes from "../../enums/AppRoutes";
 
 //components
 import InteractionsList from "../../components/lists/interactions_list/InteractionList";
@@ -29,7 +30,7 @@ const CustomerProfile: React.FC = () => {
         CUSTOMER_PROFILE_CONTEXT.STATE.currentProfile._id!!
       );
 
-      Navigate("/customers");
+      Navigate(AppRoutes.CUSTOMERS);
     }
   };
 

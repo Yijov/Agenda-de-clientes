@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { State } from "../../../state/State";
 import PageSubtitle from "../../section_sub_header/PageSubHeader";
 import InteractionType from "../../../enums/InteractionType";
-import ICustomer from "../../../interfaces/ICustomer";
+import ICustomer from "../../../models/ICustomer";
 
 const InteractionAddForm: React.FC = () => {
   const { CUSTOMER_PROFILE_CONTEXT } = useContext(State);

@@ -1,12 +1,12 @@
 import Connection from "../connection/Connection";
-import IAccountSignUpDTO from "../../interfaces/IAccountSignUpDTO";
-import IAccountSignInDTO from "../../interfaces/IAccountSignInDTO";
+import IAccountSignUpDTO from "../../models/IAccountSignUpDTO";
+import IAccountSignInDTO from "../../models/IAccountSignInDTO";
 
 export default class AuthAPI extends Connection {
   private routes = {
     signin: `${this.API_DOMAIN}/account/signin`,
-    singup: `${this.API_DOMAIN}/account/signin`,
-    signout: `${this.API_DOMAIN}/account/signin`,
+    singup: `${this.API_DOMAIN}/account/signup`,
+    signout: `${this.API_DOMAIN}/account/signout`,
   };
   public POST_SIGNIN = async (DTO: IAccountSignInDTO) => {
     const reponse = await this.POST_REQUEST(this.routes.signin, DTO);

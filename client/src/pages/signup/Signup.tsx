@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { State } from "../../state/State";
 import { Link } from "react-router-dom";
-import AppRoutes from "../../enums/routes";
+import AppRoutes from "../../enums/AppRoutes";
 
 const Signup: React.FC = () => {
   const { AUTH_CONTEXT } = useContext(State);
@@ -9,7 +9,7 @@ const Signup: React.FC = () => {
   return (
     <div className="page" id="register-page">
       <form id="register-form" method="post" onSubmit={AUTH_CONTEXT.API.SIGNUP_SUBMIT}>
-        <h2>Register</h2>
+        <h2>Sign Up</h2>
 
         <div id="register-error">
           <span>{AUTH_CONTEXT.STATE.AuthError}</span>

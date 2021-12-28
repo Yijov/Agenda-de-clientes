@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/images/CRM.png";
 import { useNavigate } from "react-router";
-import AppRoutes from "../../enums/routes";
+import AppRoutes from "../../enums/AppRoutes";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();

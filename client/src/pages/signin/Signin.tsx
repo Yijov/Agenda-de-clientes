@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import { State } from "../../state/State";
 import { Link } from "react-router-dom";
-import AppRoutes from "../../enums/routes";
+import AppRoutes from "../../enums/AppRoutes";
 export const Signin: React.FC = () => {
   const { AUTH_CONTEXT } = useContext(State);
 
   return (
     <div className="page" id="login-page">
       <form id="login-form" onSubmit={AUTH_CONTEXT.API.SIGNIN_SUBMIT}>
-        <h2>Log In</h2>
+        <h2>Sign In</h2>
 
         <input
           type="email"

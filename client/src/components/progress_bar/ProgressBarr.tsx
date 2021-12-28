@@ -2,6 +2,8 @@ import React from "react";
 import IProgressBarProps from "./IProgressBarProps";
 
 const ProgressBar: React.FC<IProgressBarProps> = ({ progress }) => {
+  console.log(progress);
+
   return (
     <div
       className="progressbar"
@@ -14,7 +16,7 @@ const ProgressBar: React.FC<IProgressBarProps> = ({ progress }) => {
     >
       <div
         style={{
-          width: progress,
+          width: `${progress}%`,
           height: "20px",
           borderRadius: "10px",
         }}

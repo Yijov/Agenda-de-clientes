@@ -1,5 +1,5 @@
-import ICustomer from "../../../interfaces/ICustomer";
-import IUpdateCustomerDTO from "../../../interfaces/IUpdateCustomerDTO";
+import ICustomer from "../../../models/ICustomer";
+import IUpdateCustomerDTO from "../../../models/IUpdateCustomerDTO";
 
 export default interface ICustomerLisState {
   API: {

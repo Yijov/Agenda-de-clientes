@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Navigate, Outlet } from "react-router-dom";
 import { State } from "../../../state/State";
-import AppRoutes from "../../../enums/routes";
+import AppRoutes from "../../../enums/AppRoutes";
 
 const PrivateRoute = () => {
   const { AUTH_CONTEXT } = useContext(State);

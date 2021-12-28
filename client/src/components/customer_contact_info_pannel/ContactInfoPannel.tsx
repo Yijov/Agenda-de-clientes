@@ -19,7 +19,7 @@ const ContactInfoPannel: React.FC<IContactInfoProps> = ({ currentProfile }) => {
         </li>
         <li>
           <AiTwotoneHome className={"icon"} />
-          {currentProfile?.address?.[0].city || "Distrito Nacional"}
+          {currentProfile?.address?.[0]?.city || "Distrito Nacional"}
         </li>
         <li>
           <MdAttachMoney className={"icon"} />

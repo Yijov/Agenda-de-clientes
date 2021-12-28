@@ -2,8 +2,8 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import CustomersAPI from "../../../data/apis/CustomersAPI";
 import sortByName from "../../../utils/SortByName";
-import ICustomer from "../../../interfaces/ICustomer";
-import IUpdateCustomerDTO from "../../../interfaces/IUpdateCustomerDTO";
+import ICustomer from "../../../models/ICustomer";
+import IUpdateCustomerDTO from "../../../models/IUpdateCustomerDTO";
 
 const api = new CustomersAPI();
 

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { State } from "../../../state/State";
 
 import { BsSearch } from "react-icons/bs";
-import ICustomerInteraction from "../../../interfaces/ICustomerInteraction";
+import ICustomerInteraction from "../../../models/ICustomerInteraction";
 
 interface IInteractionprops {
   interaction: ICustomerInteraction;

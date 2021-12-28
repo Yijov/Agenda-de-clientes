@@ -1,6 +1,6 @@
 import ICustomerLisState from "./ICustomerLisState";
-import ICustomer from "../../../interfaces/ICustomer";
-import IUpdateCustomerDTO from "../../../interfaces/IUpdateCustomerDTO";
+import ICustomer from "../../../models/ICustomer";
+import IUpdateCustomerDTO from "../../../models/IUpdateCustomerDTO";
 
 const CustomersListDefault: ICustomerLisState = {
   API: {

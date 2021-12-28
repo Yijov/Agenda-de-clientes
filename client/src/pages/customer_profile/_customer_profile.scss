@@ -9,7 +9,7 @@
     height: 30%;
     background-color: $PrimaryColor;
     color: $WhiteText;
-    background-image: url("../assets/images/CRM.png");
+    background-image: url("../assets/images/sample.jpg");
     background-size: cover;
     sub {
       font-size: 1.2rem;
@@ -35,10 +35,12 @@
 
   .contact-info {
     margin-top: 0.5rem;
-    height: 20%;
+    margin-bottom: 0.5rem;
+    height: 22%;
     box-shadow: $BoxShadow;
     background-color: white;
     margin-bottom: 0.5rem;
+
     ol {
       display: flex;
       flex-direction: column;
@@ -49,7 +51,7 @@
     }
     ol li {
       width: 100%;
-      font-size: 1.2rem;
+      font-size: 19px;
       margin-top: 6px;
       margin-left: 25%;
       list-style: none;

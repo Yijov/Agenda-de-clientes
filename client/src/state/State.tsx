@@ -1,4 +1,4 @@
-import React, { createContext, FC } from "react";
+import React, { createContext, FC, useEffect } from "react";
 import IState from "./IState";
 import DefaultState from "./StateDefault";
 import AuthState from "./auth_context/AuthState";
@@ -12,6 +12,15 @@ export const StateProvider: FC = ({ children }) => {
   const CUSTOMER_PROFILE_CONTEXT = CustomerProfileState();
   const CUSTOMERS_LIST_CONTEXT = CustomerListState();
   const ADD_CUSTOMER_FORM_CONTEXT = AddCustomerFormState();
+
+  // load all customers when the customer logs in
+
+  useEffect(() => {
+    if (AUTH_CONTEXT.STATE.Authenticated) {
+      CUSTOMERS_LIST_CONTEXT.API.GET_CUSTOMERS();
+    }
+    // eslint-disable-next-line
+  }, [AUTH_CONTEXT.STATE.Authenticated]);
 
   return (
     <State.Provider

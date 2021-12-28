@@ -1,5 +1,5 @@
 import React from "react";
-import ICustomer from "../../../interfaces/ICustomer";
+import ICustomer from "../../../models/ICustomer";
 
 import InteractionComponent from "./InteractionComponen";
 

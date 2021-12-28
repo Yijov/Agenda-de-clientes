@@ -1,9 +1,9 @@
 import { useState } from "react";
 import useNotesPanel from "./useNotesPannel";
 import useInteractionsForm from "./useInteractionsForm";
-import ICustomer from "../../../interfaces/ICustomer";
+import ICustomer from "../../../models/ICustomer";
 import ProfileDefaults from "./Defaults";
-import ICustomerInteraction from "../../../interfaces/ICustomerInteraction";
+import ICustomerInteraction from "../../../models/ICustomerInteraction";
 import CustomersAPI from "../../../data/apis/CustomersAPI";
 import { toast } from "react-toastify";
 
@@ -43,6 +43,8 @@ export default function useCustomerProfileState() {
     if (response.success) {
       toast.success("Interaction Added");
       SET_CURRENT_PROFILE(response.payload);
+      UPDATE_CURRENT_PROFILE();
+
       return;
     } else {
       toast.error("Unable to Update Customer. Please, verify your connection");
