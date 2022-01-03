@@ -1,7 +1,6 @@
 # CRM App
 
-The application works as a personal customer relationship managent system that provides core functionalities that help small businesses keep track of their customer reach rate.
-see more info about functionality in /backend/docs
+Personal customer relationship managent system that provides core functionalities that help small businesses keep track of their customer reach rate.
 
 ## start the app
 
@@ -10,7 +9,14 @@ see more info about functionality in /backend/docs
     3- run "docker-compose up" in the backend folder to start the development database and then run npm run dev
     4- run "npm start" in the client folder to start the front end
 
-keep in mind you need typescript installed
+## Funtionality
+
+- [x] CRUD relevant information about your customers
+- [x] Handle business and person customers
+- [x] See stats and metrics about customers.
+- [x] save multiple contacts for business customers
+- [ ] Schedulle Appointments
+- [ ] manage customers emails
 
 ![Customers page](./client/docs/design/Capture1.PNG "Customers Page")
 ![Customers page](./client/docs/design/Capture2.PNG "Customers Page")
