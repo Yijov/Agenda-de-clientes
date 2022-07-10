@@ -1,4 +1,4 @@
-# Agenda de contactos
+# Agenda de clientes
 
 Personal customer relationship managent system that provides core functionalities that help small businesses keep track of their customer reach rate.
 
