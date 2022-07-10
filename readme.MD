@@ -1,4 +1,4 @@
-# CRM App
+# Agenda de contactos
 
 Personal customer relationship managent system that provides core functionalities that help small businesses keep track of their customer reach rate.
 
